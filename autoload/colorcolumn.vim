@@ -1,5 +1,5 @@
 function! s:column(expr) abort
-    return a:expr =~# '^[-+]\?[1-9][0-9]*$' ? a:expr : col(a:expr)
+    return a:expr =~# '^[-+]\?[1-9][0-9]*$' ? a:expr : col(empty(a:expr) ? '.' : a:expr)
 endfunction
 
 function! colorcolumn#clear() abort
@@ -10,19 +10,19 @@ function! colorcolumn#reset() abort
     setlocal colorcolumn&
 endfunction
 
-function! colorcolumn#has(expr = '.') abort
+function! colorcolumn#has(expr) abort
     return ','.&colorcolumn.',' =~# ','.s:column(a:expr).','
 endfunction
 
-function! colorcolumn#set(expr = '.') abort
-    execute $'setlocal colorcolumn+={s:column(a:expr)}'
+function! colorcolumn#set(expr) abort
+    execute 'setlocal colorcolumn+=' . s:column(a:expr)
 endfunction
 
-function! colorcolumn#unset(expr = '.') abort
-    execute $'setlocal colorcolumn-={s:column(a:expr)}'
+function! colorcolumn#unset(expr) abort
+    execute 'setlocal colorcolumn-=' . s:column(a:expr)
 endfunction
 
-function! colorcolumn#toggle(expr = '.') abort
+function! colorcolumn#toggle(expr) abort
     if colorcolumn#has(a:expr)
         call colorcolumn#unset(a:expr)
     else
