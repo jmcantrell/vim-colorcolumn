@@ -21,16 +21,16 @@ colorcolumn#clear()                               *colorcolumn#clear()*
 colorcolumn#reset()                               *colorcolumn#reset()*
     Reset |'colorcolumn'| to its default setting.
 
-colorcolumn#has({expr} = '.')                     *colorcolumn#has()*
+colorcolumn#has({expr})                     *colorcolumn#has()*
     Check if |'colorcolumn'| contains the specified column.
 
-colorcolumn#set({expr} = '.')                     *colorcolumn#set()*
+colorcolumn#set({expr})                     *colorcolumn#set()*
     Add the specified column to |'colorcolumn'|.
 
-colorcolumn#unset({expr} = '.')                   *colorcolumn#unset()*
+colorcolumn#unset({expr})                   *colorcolumn#unset()*
     Remove the specified column from |'colorcolumn'|.
 
-colorcolumn#toggle({expr} = '.')                  *colorcolumn#toggle()*
+colorcolumn#toggle({expr})                  *colorcolumn#toggle()*
     Toggle the specified column in |'colorcolumn'|.
 
 For all of the functions that accept and {expr}, the accepted values are the
