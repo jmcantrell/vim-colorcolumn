@@ -11,7 +11,7 @@ function! colorcolumn#reset() abort
 endfunction
 
 function! colorcolumn#has(expr) abort
-    return ','.&colorcolumn.',' =~# ','.s:column(a:expr).','
+    return ',' . &colorcolumn . ',' =~# ',' . s:column(a:expr) . ','
 endfunction
 
 function! colorcolumn#set(expr) abort
