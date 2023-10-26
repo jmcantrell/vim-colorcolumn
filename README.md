@@ -4,10 +4,9 @@ Easier interaction with 'colorcolumn'.
 
 ## Installation
 
-Install using your favorite package manager, or use Vim's built-in
-package support:
+Install using your favorite package manager, or use Vim's built-in package support:
 
-```
+```sh
 mkdir -p ~/.vim/pack/default/start
 git clone https://git.sr.ht/~jmcantrell/vim-colorcolumn ~/.vim/pack/default/start/colorcolumn
 vim -c "helptags colorcolumn/doc" -c q
