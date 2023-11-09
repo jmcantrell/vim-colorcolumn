@@ -38,24 +38,24 @@ same as those accepted by |'colorcolumn'| and |col()| (default: '.').
 
 COMMANDS                                          *colorcolumn-commands*
 
-                                                  *ColorColumnClear*
-ColorColumnClear
+                                                  *:ColorColumnClear*
+:ColorColumnClear
     Corresponds to |colorcolumn#clear()|.
 
-                                                  *ColorColumnReset*
-ColorColumnReset
+                                                  *:ColorColumnReset*
+:ColorColumnReset
     Corresponds to |colorcolumn#reset()|.
 
 The following commands accept similar arguments as its corresponding function:
 
-                                                  *ColorColumnSet*
-ColorColumnSet [ARGUMENT]
+                                                  *:ColorColumnSet*
+:ColorColumnSet [ARGUMENT]
     Corresponds to |colorcolumn#set()|.
-                                                  *ColorColumnUnset*
-ColorColumnUnset [ARGUMENT]
+                                                  *:ColorColumnUnset*
+:ColorColumnUnset [ARGUMENT]
     Corresponds to |colorcolumn#unset()|.
-                                                  *ColorColumnToggle*
-ColorColumnToggle [ARGUMENT]
+                                                  *:ColorColumnToggle*
+:ColorColumnToggle [ARGUMENT]
     Corresponds to |colorcolumn#toggle()|.
 
 vim:tw=78:et:ft=help:norl:
