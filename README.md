@@ -8,7 +8,7 @@ Install using your favorite package manager, or use Vim's built-in package suppo
 
 ```sh
 mkdir -p ~/.vim/pack/default/start
-git clone https://git.sr.ht/~jmcantrell/vim-colorcolumn ~/.vim/pack/default/start/colorcolumn
+git clone $REPO_URL ~/.vim/pack/default/start/colorcolumn
 vim -c "helptags colorcolumn/doc" -c q
 ```
 
